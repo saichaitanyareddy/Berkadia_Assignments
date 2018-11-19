@@ -1,0 +1,48 @@
+h1{
+    text-align:center;
+    color:#008CBA;
+    font-family:Axial;
+   
+}
+table, th , td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+ align-content: center;
+
+}
+table tr:nth-child(odd) {
+  background-color:#008CBA;
+  
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+.a{
+   
+        width: 20%;
+        padding: 10px 10px;
+        margin: 5px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        box-sizing: border-box;
+}
+
+
+
+button {
+    width: 20%;
+    background-color:rgb(9, 79, 102);
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  
+}
+
+button:hover {
+    background-color: #45a049;
+}

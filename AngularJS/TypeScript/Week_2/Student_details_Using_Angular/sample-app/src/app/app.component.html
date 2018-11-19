@@ -1,0 +1,23 @@
+<table id='Student_Table' ng-style="Table_style">
+  <caption><h1>Student Details</h1></caption>
+  <tr>
+    <th>Roll No</th>
+    <th>Name of the Student</th>
+    <th>Marks</th>
+  </tr>
+  <tr *ngFor="let i of Student_details">
+    <td>{{i.Roll_no}}</td>
+    <td>{{i.Name}}</td>
+    <td>{{i.Marks}}</td>
+  </tr>
+ 
+</table>
+<br><br>
+
+
+<input type="number" placeholder="enter roll no" id="Roll_no"  class="a"/><br>
+<input type="text" placeholder="enter name" id="Name" class="a"/><br>
+<input type="number" placeholder="enter marks" id="Marks" class="a"/><br>
+<button (click)='addStudent()' name="ADD">Add Student</button>
+
+
