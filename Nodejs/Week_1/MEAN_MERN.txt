@@ -1,0 +1,8 @@
+MEAN:
+MEAN is opensource javascript software stack for building dynamic web applications.
+MEAN stack:
+	M-MongoDB, a NoSQL database
+	E-Express.js, a web application framework that runs on Node.js
+	A-Angular,js, or Angular, JavaScript MVC frameworks that run in browser JavaScript engines
+	N-Node.js, an execution environment for event-driven server-side and networking applications
+MERN is similar to MEAN stack except that Angular.js is replaced with React.js.

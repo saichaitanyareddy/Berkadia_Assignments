@@ -1,0 +1,11 @@
+V8 engine: V8 engine is used as Node js runtime environment.
+
+	V8 engine is a google's open source javaScript and webassembly engine written in c++.
+	V8 engine is used in google chrome and Node.js
+	V8 engine can run as standalone application or it can be embedded into any C++ application.
+	V8 engine is responsible for compiling and executing javascript source code.
+	V8 engine handles memory allocation for objects and garbage collector for objects that no longer needed.
+
+V8 compiles JavaScript directly to native machine code before executing it, instead of more traditional techniques such as interpreting bytecode or compiling the whole program to machine code and executing it from a filesystem. 
+The compiled code is additionally optimized  dynamically at runtime, based on heuristics of the code's execution profile. 
+Optimization techniques used include inlining, elision of expensive runtime properties, and inline caching. 

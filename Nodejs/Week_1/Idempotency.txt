@@ -1,0 +1,10 @@
+An idempotent HTTP method is an HTTP method that can be called many times without different outcomes.
+It would not matter if the method is called only once, or ten times over.The result should be the same. 
+It essentially means that the result of a successfully performed request is independent of the number of times it is executed. 
+For example, in arithmetic, adding zero to a number is idempotent operation.
+POST method is not Idempotent i.e each time you execute a post request a new resource is created changing the state of the resource.
+GET, PUT, DELETE, HEAD, OPTIONS and TRACE are Idempotent i.e these methods doesn't change the state of the resource.
+
+
+
+

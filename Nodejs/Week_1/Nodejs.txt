@@ -1,0 +1,5 @@
+NODE.JS:
+
+	Node.js is a platform built on Chrome’s JavaScript runtime for easily building fast, scalable network applications.Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
+
+	 Node.js lets developers use JavaScript to write Command Line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser.

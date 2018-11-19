@@ -1,0 +1,12 @@
+Callback:
+	A callback function is a fucntion which will get executed after a function has been executed it's task.
+	It is similar to executing functions in a sequence but this allows performing other actions/events asynchronously while these functions are executing.
+	Example for callback is in file callback.js
+Callback hell:
+	It is a scenario when there is a long nesting of callback functions.It is difficult to trace the code and code looks like hell of callbacks.
+	Callbacks hell can be resolved by
+		i)  writing the code in modules and separating each module as a file and importing them when required.
+		ii) using promises.
+		iii)Instead of using anonymous functions assign names to each function.
+	
+	Example:append_async file consists of nested callbacks which is difficult to read/understand.

@@ -1,0 +1,7 @@
+Single threading:
+ 	 Single-threading is the processing of one command at a time.
+	
+Multithreading:
+	Multithreading is an execution model that allows a single process to have multiple code segments that run concurrently within the "context" of that process.
+	In single cpu system, multiple threads can share a singe cpu.
+	In multiprocessing system, multiple threads can run in parallel.

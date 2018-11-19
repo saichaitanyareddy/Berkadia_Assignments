@@ -1,0 +1,11 @@
+HTTP stands for HyperText Transfer Protocol.HTTP mainly serves the communication between client and server.The client requests for some content using HTTP methods.The server will responds to these HTTP requests and provides response to the client.
+HTTP has the following methods:
+1)GET: This method is used to request the specified resource from the server through HTTP requests.
+2)HEAD: This method is similar to that of GET but used to retrieve meta data information.
+3)POST: This method is used to send data to the server.
+4)PUT: This method is used to store all the enclosed entity under supplied URL(Uniform Resource Identifier). If the URI refers to the existing resource then it will be modified.  If the URI is not available, then it creates the resource with that URI.
+5)DELETE: This method is used to deletes the specified resource given as target.
+6)CONNECT: This method is used to establish a tunnel connection to the server.
+7)OPTIONS: This method describes the communication options for the target resource.
+8)TRACE: This method echoes the received request so that a client can see what changes or additions have been made by intermediate servers.
+9)PATCH: This method applies partial modifications to the resource.

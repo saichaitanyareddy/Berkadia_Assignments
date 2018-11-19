@@ -1,0 +1,5 @@
+Event loop: The process between the starting and termination of the events is called  Event loop.
+
+The function of event loop is to check whether the stack is empty or not.
+If stack is empty then the event loop will picks the callback function from the queue and places it in the stack and executes the function.
+ 

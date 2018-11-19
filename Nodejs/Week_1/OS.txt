@@ -1,0 +1,28 @@
+OS: Operating System is a program that acts as a intermediate between computer and computer hardware.
+Os performs the following tasks:
+	Process scheduling
+	Memory management
+	File Processing
+	IO management
+Different types of operating systems:
+1) Batch operating system
+2) Time sharing Operating system
+3) Distributed Operating system
+4) Network operating system
+5) Real Time Operating system
+
+Linux:
+	Portable
+	Multitasking
+	MultiUser
+	Virtual Memory
+	GUI
+	Hierarchical File System
+Windows:
+	kernel
+	file system 
+	memory manager
+	Security management
+
+
+

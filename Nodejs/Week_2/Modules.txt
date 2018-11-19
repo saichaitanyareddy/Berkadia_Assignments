@@ -1,0 +1,47 @@
+MOdule:
+
+	Nodejs modules are like library functions in javascript and these can be included into our application.
+	In the Node.js module system, each file is treated as a separate module.
+	If we want to use a module we need to use require() in the .js before actually utilizing the modules.
+	
+Nodejs includes three types of modules.They are:
+	i) Core modules
+	ii)Local modules
+	iii) Third party modules
+i)core modules:
+	core modules are compiled into its binary distribution and load automatically when Node.js process starts. 
+	we need to import them in order to use them in our applications.
+	some of the core modules are listed below:
+	1)http         =>	http module includes classes, methods and events to create Node.js http server.
+	2)url	     => url module includes methods for URL resolution and parsing.
+	3)querystring  => querystring module includes methods to deal with query string.
+	4)path         => path module includes methods to deal with file paths.
+	5)fs           => fs module includes classes, methods, and events to work with file I/O.
+	6)util	     => util module includes utility functions useful for programmers.
+	
+	we include these core modules using:
+		var module = require('module_name');
+
+ii)Local Modules:
+	Local modules are the modules created by us while building our application.
+	we need to export the module using module.exports.
+	we include these local modules using:
+		var module = require('./module_name');
+
+
+	
+
+Nodejs modules list:
+	
+	Async: Async is a utility module which provides straight-forward, powerful functions for working with asynchronous JavaScript.
+
+	Browserify: Browserify will recursively analyze all the require() calls in your app in order to build a bundle you can serve up to the browser in a single <script> tag.
+
+	Http-server: is a simple, zero-configuration command-line http server. It is powerful enough for production usage, but it's simple and hackable enough to be used for testing, local development, and learning.
+
+	Jquery : jQuery is a fast, small, and feature-rich JavaScript library.
+
+	MongoDB: The official MongoDB driver for Node.js. It provides a high-level API on top of mongodb-core that is meant for end users.
+
+	Mongoose: It is a MongoDB object modeling tool designed to work in an asynchronous environment.
+

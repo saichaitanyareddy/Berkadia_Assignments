@@ -1,0 +1,16 @@
+The complexity of an algorithm is a function describing the efficiency of the algorithm in terms of the amount of data the algorithm must process.
+There are mainly two types  of complexity measures. They are:
+1)Time Complexity: 
+Time complexity is a function describing the amount of time an algorithm takes in terms of the amount of input to the algorithm.
+2)Space Complexity:
+Space complexity is a function describing the amount of memory (space) an algorithm takes in terms of the amount of input to the algorithm.
+
+Both Time and Space complexities are usaually measured using Asymptotic notations.
+1)Big O
+2)Big omega
+3)theta
+4)little omega
+5)little O
+1,2 are used to measure worst case complexity of an algorithm.
+3 is used to measure average case complexity of an algorithm.
+4,5 are used to measure Best case complexity of an algorithm.

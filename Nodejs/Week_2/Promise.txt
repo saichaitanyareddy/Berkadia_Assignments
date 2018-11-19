@@ -1,0 +1,13 @@
+Promise:
+	callback results in callback hell when many callback funtions are used within a fucntion.
+	While promise is similar to callbacks but provides readability and understanding of code to the user.
+	A Promise is a value returned by an asynchronous function to indicate the completion of the processing carried out by the asynchronous function.
+Promise is in one of the following three states:
+	pending - The initial state of a promise.
+	fulfilled - The state of a promise representing a successful operation.
+	rejected - The state of a promise representing a failed operation.
+
+Advantages of using promise:
+	* Readability of code.
+	* avoiding callback hell.
+	

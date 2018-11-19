@@ -1,0 +1,15 @@
+ASYNC:
+
+	'async' keyword is placed before a function.
+	The word 'async' before a function means it always returns a promise. 
+	If the code has return <non-promise> in it, then JavaScript automatically wraps it into a resolved promise with that value.
+
+AWAIT:
+	The keyword 'await' makes JavaScript wait until that promise settles and returns its result.
+
+	'await' literally makes JavaScript wait until the promise settles, and then go on with the result. That doesn’t cost any CPU resources, because the engine can do other jobs mean while it can execute other scripts, handle events etc.
+
+	It’s just a more elegant syntax of getting the promise result than promise.then, easier to read and write.
+
+	'await' can't be used in regular functions. it should used inside a 'async' function only.
+

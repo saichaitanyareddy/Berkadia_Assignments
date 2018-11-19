@@ -1,0 +1,60 @@
+NPM:
+npm is a package manager for the JavaScript programming language. 
+It is the default package manager for the JavaScript runtime environment Node.js.
+
+npm is written entirely in JavaScript and was developed by Isaac Z. Schlueter
+Over 477,000 packages are available on the main npm registry
+In npm version 6, the audit feature was introduced to help developers identify and fix vulnerability and security issues in installed packages.
+
+lodash
+Lodash modular utilities.
+
+request
+Simplified HTTP request client.
+
+chalk
+Terminal string styling done right
+
+async
+Higher-order functions and common patterns for asynchronous code
+
+express
+Fast, unopinionated, minimalist web framework
+
+react
+React is a JavaScript library for building user interfaces.
+
+bluebird
+Full featured Promises/A+ implementation with exceptionally good performance
+
+commander
+the complete solution for node.js command-line programs
+
+debug
+small debugging utility
+
+
+
+
+forever
+A simple CLI tool for ensuring that a given node script runs continuously (i.e. forever)
+
+
+cordova
+Cordova command line interface tool
+
+
+grunt
+The JavaScript Task Runner
+
+
+bower
+The browser package manager
+
+
+browserify
+browser-side require() the node way
+
+
+gulp
+The streaming build system

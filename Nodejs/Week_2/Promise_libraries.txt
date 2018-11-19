@@ -1,0 +1,10 @@
+Promise libraries:
+Bluebird:  	Loaded with features and should be one of the fastest around and with special empathizes on error handling via good stack traces. Features can be toggled via custom builds.
+catiline:	Mostly designed for handling of web workers but contains a promise implementation. Uses lie underneath.
+jQuery:		Classic library for DOM-manipulation across browsers.
+kew:		It is optimiszed version of 'Q' with a smaller feature set.
+MyDeffered:	small Gist style implementation.
+MyPromise:	small Gist style implementation.
+Q:		Well known implementation, a light edition of it can be found in the popular AngularJS framework from Google.
+Yui:		Yahoo’s library for DOM-manipulation across browsers.
+ 

@@ -1,0 +1,6 @@
+Advantages of compiled languages over Interpreted languages:
+
+ * compiled languages will need to be compiled only once and can run any number of times.
+ * All the errors are displayed at once.
+ * It doesn't stop the compilation in the middle where as interpreted languages stop when the first error occurs.
+

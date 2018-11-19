@@ -1,0 +1,13 @@
+Data structures:
+Data structure is the way of organizing data for efficient access.
+Data structures are two types. They are:
+1) Linear Data structures.
+2) Non Linear Data structures.
+Linear Data structures:
+	stack
+	Linked List
+	Queue
+Non Linear Data structures:
+	Graphs
+	Trees
+	Hash

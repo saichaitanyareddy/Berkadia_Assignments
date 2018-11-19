@@ -1,0 +1,21 @@
+CDN: Content Delivery Network also called as Content Distribution Network (CDN) is a geographically distributed network of proxy servers and their data centers.
+These are mainly intended to provide high availability and high performance to the end users.
+Content owners will pay to the CDN operators to provide their content to the end users.
+CDN are mainly designed to solve the issue of Latency.Latency is the time taken from request to till the response is rendered on the browser. 
+
+To minimize the distance between the visitors and your website’s server, a CDN stores a cached version of its content in multiple geographical locations(Points of Presence(PoP)).
+CDN are evolution can be divided into 3 generations.They are:
+1)static CDN 1991-2001
+	It provides static HTML and downloadable files.
+	Performamce
+	
+
+2)Dynamic CDN 2001-2010
+	It provides static and dynamic content including rich media.
+	Performance and availability
+
+
+3)Multi-purpose CDN 2010-2015
+	It provides static and dynamic content including mobile and rich media.
+	Security,Performance and availability.
+
