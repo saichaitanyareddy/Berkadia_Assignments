@@ -60,19 +60,3 @@ console.log(s.trim());//Removes whitespace from both ends of a string
 ------------------------
 hello Node
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
