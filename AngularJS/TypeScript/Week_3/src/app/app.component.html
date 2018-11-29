@@ -1,0 +1,31 @@
+<div class="gallery">
+  <div class="thumb" *ngFor="let thumb of galleryData" (click)="getFullDetialsOfMovie(thumb.id)">
+    <div class="title">
+      <span>{{ thumb['title']}}</span>
+      <p class="popiularity"> &#10084; {{ thumb['vote_average']}}</p>
+      <span class="overview">{{ thumb['overview']}}</span>
+    </div>
+    
+    <img id="image" [src]="thumb['backdrop_path']" alt="thumb['title']">
+    
+  </div>
+</div>
+
+<div class="overlay" *ngIf="fullMovieDetials">
+  <div  class="modal">
+      <div id="movie_details">
+      <div>
+      <img id="movie_poster" [src]="fullMovieDetials['backdrop_path']" alt="fullMovieDetials['title']" >
+    </div>
+      <p><strong>Title:</strong> {{fullMovieDetials.original_title}}</p>
+      <p><strong>Release on:</strong> {{fullMovieDetials.release_date}}</p>
+      <p><strong>OverView:</strong> {{fullMovieDetials.overview}}</p>
+      <p><strong>Revenue:</strong> {{ fullMovieDetials.revenue | currency }} </p>
+      <p><strong>Average Votes:</strong> {{ fullMovieDetials.vote_average }} </p>
+      
+      <a href="https://www.bookmyshow.com"><button id="book_button" (click)="onBook">Book Tickets Now</button></a>
+      
+      <a href="http://localhost:4200" ><button id="back_button" (click)="onBack()" >Back</button></a>
+    </div>
+  </div>
+</div>
