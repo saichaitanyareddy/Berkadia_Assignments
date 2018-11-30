@@ -60,8 +60,3 @@ console.log(Name("hii","Node"));
 --------------------------------------------------
 F:\js\Week_3>node Call_Apply_Bind.js
 Sai,hii Node
-
-
-
-
-
