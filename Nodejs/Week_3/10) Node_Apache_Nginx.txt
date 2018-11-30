@@ -9,7 +9,7 @@ Nginx:
 
 	Igor Sysoev began development of Nginx in 2002 to solve C10k problem.
 	
-	C10K problem:The C10k problem is the problem of optimising network sockets to handle a large number of clients at the same time.[1] The name C10k is a numeronym for concurrently handling ten thousand connections
+	C10K problem:The C10k problem is the problem of optimising network sockets to handle a large number of clients at the same time. 	 The name C10k is a numeronym for concurrently handling ten thousand connections
 	Nginx was written with an explicit goal of outperforming the Apache web server.
 
 Apache:
