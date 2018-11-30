@@ -26,10 +26,3 @@ In the above example,Addition(1) return Adding to the ADD variable.
 ADD variable now reference the Adding function,not the Addition function.
 when we call ADD,it can access the num1 variable which is declared outside Adding function. 
 
-
-
-	
-	
-
-
-
