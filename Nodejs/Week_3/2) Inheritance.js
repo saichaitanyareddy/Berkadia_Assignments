@@ -1,6 +1,4 @@
-Inheritance:Inheritance is the property of accquiring attributes and operations from parent along with it's own properties.
-
-
+Inheritance: Inheritance is the property of accquiring attributes and operations from parent along with it's own properties.
 class A
 {
 	A(name){
