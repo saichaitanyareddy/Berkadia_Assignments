@@ -1,0 +1,22 @@
+SOAP:Simple Object Access Protocol
+SOAP brings its own protocol and focuses on exposing pieces of application logic (not data) as services. 
+SOAP exposes operations.SOAP is focused on accessing named operations, each operation implement some business logic.
+SOAP builds an XML based protocol on top of HTTP or sometimes TCP/IP.
+
+
+REST:REpresentational State Transfer 
+REST is an architectural style.
+REST allows better support for browser clients due to its support for JSON.
+REST permits many different data formats where as SOAP only permits XML.
+REST is commonly used in social media, web chat, mobile services and Public APIs like Google Maps
+ 
+
+When to use REST:
+	Limitedbandwidth and resources
+	Stateless operations
+	caching situations
+
+When to use SOAP:
+	Asynchronous processing and invocation
+	Formal contracts
+	Stateful operations
