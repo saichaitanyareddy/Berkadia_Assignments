@@ -14,8 +14,8 @@ For in:
 	we need to specify 'array[index]' inorder to get the exact element.
 	For in loop iterates over object's properties.
 
+var students=[ {Name:'Sai'},{Name:'Chaitanya'},{Name:'Madhu'},{Name:'Hari'},{Name:'Pradeep'},{Name:'Pushpak'},{Name:'Vamsi'}];
 
-var students=['Sai','Chaitanya','Madhu','Hari','Pradeep','Pushpak','Vamsi'];
 
 for(let i=0;i<students.length;i++)	//for loop
 {
