@@ -101,19 +101,3 @@ console.log(singleton);
 
 cmd>node Objects.js
 { Name: 'Sai', College: 'Vardhaman' }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
