@@ -1,6 +1,6 @@
 map:
 	map applies function to each element in the array.
-	map doesn't work until has elements.
+	map doesn't work until the array has elements.
 	Inorder to apply map functions we need to fill the array first and then apply map().
 
 Example:
