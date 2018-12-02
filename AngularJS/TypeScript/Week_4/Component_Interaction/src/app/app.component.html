@@ -1,0 +1,14 @@
+<h1>Classroom</h1>
+<hr>
+<div style="text-align:center">
+  <h2>Teacher </h2>
+  <Label><b>Question:</b></Label>
+  <input type="text" [(ngModel)]="teacher">
+  <button (click)="onAsk()" type="button">Ask Question</button><br><br>
+   <b>Answer from student :{{studentAnswer}}</b><br><br>
+</div>
+<br>
+<br>
+
+
+<app-link [teacherQuestion]="teacher" [teacherClick]="teacherClick" (Answer)="updateInStudentValue($event)"></app-link>

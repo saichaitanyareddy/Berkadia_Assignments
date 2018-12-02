@@ -1,0 +1,10 @@
+<div style="text-align:center">
+  <h2>Student</h2>
+  <label><b>Student:</b> </label>
+  <input type="text" [(ngModel)]="studentAnswer">
+  <button (click)="sendAnswer()" type="button">Send Answer to Teacher</button><br><br>
+  <b>Question from Teacher: {{teacherQuestion}}</b><br><br>
+  <b>No.of Questions asked:{{questionCount}}</b>
+  <br><br>
+</div>
+
