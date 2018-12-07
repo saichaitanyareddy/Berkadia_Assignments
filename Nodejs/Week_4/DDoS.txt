@@ -1,0 +1,48 @@
+DDoS:Distributed Denial of Service attack.
+	In DDoS attack,the incoming traffic flooding the victim originates from many different sources. 
+	This effectively makes it impossible to stop the attack simply by blocking a single source.
+	A Distributed DoS is a large scale attack where the attackers uses different ip addresses(These ip addressesare from different geographical locations).
+	It is difficult to distinguish a attacker from legitimate user.
+	It is impossible to stop the attack  simply by using ingress filtering.
+
+Ingress filtering:
+	It is a technique used to ensure that incoming packets are actually from the networks from which they claim to originate.
+	This can be used as a countermeasure against various spoofing attacks where the attacker's packets contain fake IP addresses to make it difficult to find the source of the attack.
+
+
+Denial of Service attack:
+	The attacker sends a number of requests to increase load/traffic to the server.
+	DoS make a resource unavailable to the legitimate users.
+	 
+
+There are two general forms of DoS attacks: 
+	Attacks that crash services and another type attacks are those that flood services. 
+	The most serious attacks are distributed.
+
+The scale of DDoS attacks has continued to rise over recent years, by 2016 exceeding a terabit per second. 
+
+Application layer DDoS attack:
+	An application layer DDoS attack is a form of DDoS attack where attackers target application-layer processes.
+	The attack over-exercises specific functions or features of a website with the intention to disable those functions or features. 
+	The application-layer attack is different from an entire network attack.
+	This attack can disrupt services such as the retrieval of information or search function.
+
+
+Some common examples of DDoS attacks are fraggle, smurf, and SYN flooding.
+
+Smruf Attack:
+	The Smurf attack is a distributed denial-of-service attack in which large numbers of Internet Control Message Protocol (ICMP) packets with the intended victim's spoofed source IP are broadcast to a computer network using an IP broadcast address. 
+	Computers will respond to this by sending a reply to the source IP address. 
+	The victim's computer will be flooded with traffic.
+	It  can slow down the performance of victim's computer.
+
+Fraggle Attack:
+	It works very similarly to the Smurf attack in that many computers on the network will respond to this traffic by sending traffic back to the spoofed source IP of the victim, flooding it with traffic.
+
+
+SYN Flodding Attack:
+	A SYN flood is a form of denial-of-service attack in which an attacker sends a succession of SYN requests to a target's system in an attempt to consume enough server resources to make the system unresponsive to legitimate traffic.
+
+
+
+
