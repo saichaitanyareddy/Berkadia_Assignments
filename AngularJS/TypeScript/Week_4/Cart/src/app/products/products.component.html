@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="col-md-5">
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-info">item 1 <button  class="btn btn-primary btn-sm pull-right"  (click)="onAdd()" type="button">ADD to Cart</button></li>
+        <li class="list-group-item list-group-item-info">item 2<button  class="btn btn-primary btn-sm pull-right" (click)="onAdd()" type="button">ADD to Cart</button></li>
+        <li class="list-group-item list-group-item-info">item 3<button   class="btn btn-primary btn-sm pull-right" (click)="onAdd()" type="button">ADD to Cart</button></li>
+      </ul>
+  </div>
+</div>
+<app-cart-count [itemClick]="itemClick"></app-cart-count>

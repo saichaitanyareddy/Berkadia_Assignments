@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="col-md-5">
+      <div class="well well-sm">
+        <b>No.of Items in Cart:  <strong>{{count}}</strong></b>
+      </div>
+         
+        <button  class="btn btn-primary btn-sm pull-right"  (click)="onRemove()" type="button">Remove any one Item from cart</button>
+  </div>
+</div>
+<div class="container">
+  <div class="col-md-5">
+     <div class="form-group">
+              <label>User Feedback:</label>
+              <input type="text" class="form-control" [(ngModel)]="Userfeedback" placeholder="Give feedback about the items">
+      </div>
+     <br>     
+      <app-user-feedback [feedback]="Userfeedback"></app-user-feedback>
+  </div><br>
+          
+</div>
+  
+ 
+
+
+
