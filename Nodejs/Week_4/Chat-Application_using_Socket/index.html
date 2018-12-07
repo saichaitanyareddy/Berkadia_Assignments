@@ -5,33 +5,31 @@
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script src="/socket.io/socket.io.js"></script>
          <style>
-        body{
-            margin-top:30px;
-            background-color: rgb(56,161,243) !important;
-        }
-        #messageArea{
-            display: none;
-        }
-        
-        .well{
-            width: relative;
-            height: relative;
-            background-color: rgb(182, 219, 250);
-            border-color: rgb(200, 233, 248);
-            
-            
-        }
-        label,h3,#typing_message{
-            color: rgb(5, 38, 53);
-        }
-       .btn{
-           color: #fff;
-           background-color: rgb(3, 60, 107);
-       }
+            body{
+                margin-top:30px;
+                background-color: rgb(56,161,243) !important;
+            }
+            #messageArea{
+                display: none;
+            }
 
-        
-        
-        </style>
+            .well{
+                width: relative;
+                height: relative;
+                background-color: rgb(182, 219, 250);
+                border-color: rgb(200, 233, 248);
+
+
+            }
+            label,h3,#typing_message{
+                color: rgb(5, 38, 53);
+            }
+           .btn{
+               color: #fff;
+               background-color: rgb(3, 60, 107);
+           }
+
+         </style>
     </head>
     
     <body>
@@ -126,17 +124,13 @@
                message.bind("keypress", () => {
                     socket.emit('typing')
                 })
-
-               
-                socket.on('typing', (data) => {
+              
+               socket.on('typing', (data) => {
                     typing_message.html("<strong><p><i>" + data.user + "</i></strong>  is typing a message... </p>")
                 })   
             
            });
            
-                
-
-
-       </script>
+        </script>
     </body>
 </html>
