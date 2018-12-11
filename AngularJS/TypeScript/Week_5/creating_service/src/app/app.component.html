@@ -1,0 +1,51 @@
+<br>
+<div class="container">
+  <div class="col-md-12">
+    <br>
+    <div *ngIf="color" [hidden]="!visible">
+      <p  [ngStyle]="{ width:'250px',height:'45px',backgroundColor:id%2!==0?'yellow':'green'}">This block is styled using ngStyle</p>
+    </div>
+    <div [ngClass]="{id:id%2!==0}" class="well well-sm">This div is styled using ngClass</div>
+    
+    <h2>Students Results</h2>
+    <table class="table table-border">
+      <tr class="heading">
+        <th>S.no</th>
+        <th>Hall Ticket No</th>
+        <th>Name</th>
+        <th>Marks</th>
+        <th>Grade</th>
+        <th>Result</th>
+      </tr>
+      <tr  *ngFor="let student of studentDetails;let i=index;let even=even;let odd=odd;let first=first;let last=last;" [ngClass]="{odd:odd,even:even,first: first, last: last}">
+        <td>{{i+1}}</td>
+        <td>{{student.hallticket}}</td>
+        <td>{{student.name}}</td>
+        <td>{{student.marks}}</td>
+        <td>{{student.grade}}</td>
+        <td>{{student.result}}</td>
+      </tr>
+    </table>
+    <h3>Click on the buttons below:</h3>
+    <button class="btn btn-primary"  *ngFor="let student of studentDetails;let i=index" (click)="value=i+1">{{student.name}}   </button>
+    
+    <div [ngSwitch]="value">
+      <p *ngSwitchCase="1"><strong>hello Sai</strong><i>This text is displayed using ngSwitch</i></p>
+      <p *ngSwitchCase="2"><strong>hello chaitanya</strong><i>This text is displayed using ngSwitch</i></p>
+      <p *ngSwitchCase="3"><strong> hello Madhu</strong><i>This text is displayed using ngSwitch</i></p>
+      <p *ngSwitchCase="4"><strong>hello Hari</strong><i>This text is displayed using ngSwitch</i></p>
+      <p *ngSwitchCase="5"><strong>hello Vamsi</strong><i>This text is displayed using ngSwitch</i></p>
+      <p *ngSwitchCase="6"><strong>hello pradeep</strong><i>This text is displayed using ngSwitch</i></p>
+      <p *ngSwitchCase="7"><strong>hello pushpak</strong><i>This text is displayed using ngSwitch</i></p>
+      <p *ngSwitchCase="8"><strong>hello Srikanth</strong><i>This text is displayed using ngSwitch</i></p>
+      <p *ngSwitchDefault></p>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
