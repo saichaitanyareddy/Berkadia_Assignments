@@ -14,6 +14,7 @@ router.get('/employees/:emp_id', (req, res) => {
           res.send("Internal server was down");
       })
   })
+
 router.post('/employees', (req, res) => {
     api.post(req.path,req.body).then(resp => {
       res.json(resp.data);
@@ -22,6 +23,16 @@ router.post('/employees', (req, res) => {
           res.send("Internal server was down");
       })
   })
+
+router.put('/employees/:emp_id', (req, res) => {
+    api.put(req.path,req.body).then(resp => {
+      res.send(resp.data)
+    }).catch(err=>{
+          console.log("error");
+          res.send("Internal server was down");
+      })
+  })
+
 router.delete('/employees/:emp_id', (req, res) => {
     api.delete(req.path).then(resp => {
       res.send(resp.data)
