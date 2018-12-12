@@ -24,6 +24,13 @@ router.post('/employees',(req,res)=>{
     res.json(body.emp_id);
 });
 
+router.put('/employees/:emp_id',(req,res)=>{
+    let body=req.body;
+    let index=employees.findIndex(x=>x.emp_id==req.params.emp_id)
+    employees[index].name=body.name;
+    res.json(employees[index]);
+});
+
 router.delete('/employees/:emp_id',(req,res)=>{
     let s=employees.findIndex(x=>x.emp_id==req.params.emp_id);
     let result=employees.splice(s,1);
