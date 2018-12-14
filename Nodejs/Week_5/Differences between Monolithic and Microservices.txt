@@ -1,0 +1,58 @@
+Differences between Monolithic and Microservices:
+
+1)Code:
+	Monolithic:Single code base.
+	Microservices:Multiple code base.Each Microservice has its own code base.
+2)Understandability:
+	Monolithic:Often confusing and hard to understand.
+	Microservices:Much better readability and easier to maintain.
+3)Deployment:
+	Monolithic:Complex deployments with maintenance windows and scheduled downtimes.
+	Microservices:Simple deployment as each microservice can be deployed individually.
+4)Language:
+	Monolithic:Typically entirely developed in one programming language.
+	Microservices:Each microservice can be developed in a different programming language.
+5)Scaling:
+	Monolithic:Requires us to scale the entire application even though bottlenecks are localized.
+	Microservices:Enables us to scale bottle-necked services without scaling the entire application.
+			 			
+
+
+
+Monolithic services advantages:
+	1)simple to develop.
+	2)simple to test.
+	3)simple to deploy.
+	4)simple to scale.
+
+Drawbacks:
+	1)The large monolithic code base intimidates developers, especially ones who are new to the team.
+	2)Overloaded IDE - the larger the code base the slower the IDE and the less productive developers are.
+	3)Overloaded web container - the larger the application the longer it takes to start up. This had have a huge impact on developer productivity because of time wasted waiting for the container to start. It also impacts deployment too.
+	4)Continuous deployment is difficult.
+	5) In order to update one component you have to redeploy the entire application.
+	6)Scaling the application can be difficult.
+	7)Requires a long-term commitment to a technology stack.
+	8)It can be difficult to incrementally adopt a newer technology.
+
+Microservices advantages:
+	1)continuous delivery and deployment of large, complex applications.
+	2)Better testability - services are smaller and faster to test.
+	3)Better deployability - services can be deployed independently.
+	4)It enables you to organize the development effort around multiple teams.
+	5)Easier for a developer to understand.
+	6)The IDE is faster making developers more productive.
+	7)The application starts faster, which makes developers more productive, and speeds up deployments.
+	8)Improved fault isolation.
+	9)Eliminates any long-term commitment to a technology stack. 
+
+Drawbacks:
+	1)Developers must deal with the additional complexity of creating a distributed system.
+	2)IDE don't provide much support for development of microservices.
+	3)Testing is more difficult.
+	4)Developers must implement the inter-service communication mechanism.
+	5)Implementing use cases that span multiple services without using distributed transactions is difficult.
+	6)Implementing use cases that span multiple services requires careful coordination between the teams
+	7)Increased memory consumption.
+
+
