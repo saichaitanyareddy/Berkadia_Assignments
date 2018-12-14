@@ -28,21 +28,8 @@ router.get('/well',(req,res)=>{
 	res.send("Welcome to router");
 });
 
-/*
-router.param(function(param, validator) {
-    return function (req, res, next, val) {
-      if (validator(val)) {
-        next();
-      }
-      else {
-        res.sendStatus(403);
-      }
-    }
-  });
-  
-  router.param('id', function (candidate) {
-    return !isNaN(parseFloat(candidate)) && isFinite(candidate);
-  }); */
+
+
 router.param('id',(req,res,next,id)=>{
       if(id=='1')
       {
@@ -105,3 +92,4 @@ router.all('/*',(req,res)=>{
 });
 app.listen(5000);
 console.log("welcome");
+
