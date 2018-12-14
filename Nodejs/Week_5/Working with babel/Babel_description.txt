@@ -1,0 +1,15 @@
+Babel is javascript complier.
+The initial working name for babel is '6to5'.
+Later after the release of 3.0 version the 6to5 team changed the project name to babel.
+Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. 
+Babel helps to:
+	1)Transform syntax
+	2)Polyfill features that are missing in your target environment (through @babel/polyfill)
+	3)Source code transformations (codemods)
+Babel has support for the latest version of JavaScript through syntax transformers.
+Babel can convert JSX syntax
+Babel can strip out type annotations.
+Babel tries uses the least amount of code possible with no dependence on a bulky runtime.
+Babel currently released 7.1.0 version.
+
+

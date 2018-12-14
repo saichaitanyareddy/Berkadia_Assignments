@@ -1,0 +1,24 @@
+Follow the below steps to work with babel:
+	1)open command prompt and go through the working directory
+	2)npm init
+	3)npm install babel-cli babel-presets-es2015 --save-dev
+	4)in package.json replace the "scripts" using below code:
+		"scripts": {
+	    		"build":"babel src -d compiled"
+  		},
+  		"scripts":{
+    			"build":"babel --presets es2015 src -d compiled"
+  		}
+	In the above code compiled is the name of the destination folder.
+	5)create a .babel.rc file in your project folder and place the below code in it.
+		{
+    			"presets":[
+        			"es2015"
+    			]
+		}
+	6)create folder named src and one file named main.js where we write our code which will be compiled into browser understandable javascript.
+	7)Now create a another folder which will bethe destination for the converted/compiled code.
+	8)Write some es6 code in main.js and run the below command:
+		cmd>npm run build
+	
+	9)check the destination folder whether a file containing the converted code is created or not.
