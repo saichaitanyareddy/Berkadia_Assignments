@@ -1,0 +1,17 @@
+
+<h2>IPL Teams</h2>
+<table class="table table-border">
+  <tr class="heading">
+    <th>Team No</th>
+    <th>Team Name</th>
+    <th>Captain</th>  
+
+  </tr>
+  <tr  *ngFor="let team of teamsList;let even=even;let odd=odd;" [ngClass]="{odd:odd,even:even}">
+    <td>{{team.id}}</td>
+    <td>{{team.Name}}</td>
+    <td>{{team.Captain}}</td>
+    </tr>
+</table>
+
+<router-outlet></router-outlet>

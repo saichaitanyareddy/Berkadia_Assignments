@@ -1,0 +1,11 @@
+img{
+    width:290px;
+    height:250px;
+    border: 2px;
+    border-color: rgba(19, 116, 243, 0.589);
+    border-style: solid;
+}
+h3{
+    text-align: center;
+    color: rgb(15, 13, 138);
+}

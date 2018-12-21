@@ -1,0 +1,20 @@
+<h2>IPL Schedule 2019</h2>
+<table class="table table-border">
+  <tr class="heading">
+    
+    <th>Match No</th>
+    <th>Teams</th>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Venue</th>
+    
+  </tr>
+  <tr  *ngFor="let ipl of scheduleDetails;let i=index;let even=even;let odd=odd;" [ngClass]="{odd:odd,even:even}">
+    <td>{{i+1}}</td>
+    <td>{{ipl.Teams}}</td>
+    <td>{{ipl.Date}}</td>
+    <td>{{ipl.Time}}</td>
+    <td>{{ipl.venue}}</td>
+    
+  </tr>
+</table>

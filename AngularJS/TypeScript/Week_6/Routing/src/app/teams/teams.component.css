@@ -1,0 +1,29 @@
+.container{
+    background-color:  rgb(233, 238, 243);
+    border-radius: 10px;
+}
+
+.id{
+    color: rgb(8, 47, 73);
+    background-color: rgb(170, 208, 243);
+    border-style: dashed;
+    border-color: rgb(12, 12, 20);
+    width: 250px;
+    height:20%;
+}
+h2{
+    text-align: center;
+    align-content: center;
+}
+.heading{
+    background-color: #000;
+    color: #fff;
+}
+.even{
+    background-color: rgb(170, 208, 243);
+    color: #000;
+}
+.odd{
+    background-color: rgb(27, 60, 92);
+    color: #fff;
+}

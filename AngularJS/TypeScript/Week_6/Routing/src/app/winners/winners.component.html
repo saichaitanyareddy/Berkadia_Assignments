@@ -1,0 +1,21 @@
+<h2>IPL Previous Season's Winners</h2>
+<div class="text-center">
+  <img src="../../assets/cup.jpg" class="img-fluid" alt="Sample image with waves effect.">
+</div>
+<table class="table table-border">
+  <tr class="heading">
+    <th>Season No</th>
+    <th>Winning Team</th>
+    <th>Year</th>  
+  </tr>
+  <tr  *ngFor="let ipl of winners;let i=index;let even=even;let odd=odd;" [ngClass]="{odd:odd,even:even}">
+    <td>{{i+1}}</td>
+    <td>{{ipl.team}}</td>
+    <td>{{ipl.year}}</td>
+  </tr>
+</table>
+
+<img src="../../assets/1.jpg" class="img-fluid" alt="Sample image with waves effect.">
+
+
+
