@@ -1,0 +1,105 @@
+PS C:\Users\K.Naveen Reddy\Desktop\webapp> docker image inspect  2795339928f4
+[
+    {
+        "Id": "sha256:2795339928f41889197a4bdb05f54cf4ede5a5cb5ddd0efc14b736daddcfa1bc",
+        "RepoTags": [
+            "sample:version6"
+        ],
+        "RepoDigests": [],
+        "Parent": "sha256:94117939fc309ce716fe166a1972efb9c0f11ea713bc8607d3b4daa883cf52c3",
+        "Comment": "changes in exposing port",
+        "Created": "2018-12-17T13:12:31.980502656Z",
+        "Container": "ef331188f3178e184607a56fde4672e1919b9876de46f56359a9d1f9117a2e4d",
+        "ContainerConfig": {
+            "Hostname": "ef331188f317",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "3000/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NODE_VERSION=10.14.2",
+                "YARN_VERSION=1.12.3"
+            ],
+            "Cmd": [
+                "node",
+                "server.js"
+            ],
+            "ArgsEscaped": true,
+            "Image": "sample",
+            "Volumes": null,
+            "WorkingDir": "/src/app",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {}
+        },
+        "DockerVersion": "18.09.0",
+        "Author": "",
+        "Config": {
+            "Hostname": "ef331188f317",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "3000/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NODE_VERSION=10.14.2",
+                "YARN_VERSION=1.12.3"
+            ],
+            "Cmd": [
+                "node",
+                "server.js"
+            ],
+            "ArgsEscaped": true,
+            "Image": "sample",
+            "Volumes": null,
+            "WorkingDir": "/src/app",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {}
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 75306472,
+        "VirtualSize": 75306472,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/mnt/sda1/var/lib/docker/overlay2/ffeda46377c2f17a3d9355321f0ff611644d2d92a0344840d5a3b9af5d2410a7/diff:/mnt/sda1/var/lib/docker/overlay2/b0012a2890b8e2c76d0787202bac91a2be070c0f8600f3bb02abadfa042256ca/diff:/mnt/sda1/var/lib/docker/overlay2/40a10760577164848660f2728d2139e5257c11c594d1484691580d1e54d16778/diff:/mnt/sda1/var/lib/docker/overlay2/59e793c0401b25ca5cf47e4213426e2d3f9c1cbdfe9f5b13ef13035eea058fc6/diff:/mnt/sda1/var/lib/docker/overlay2/43be6414ec5ad3dc0bd52bd5b96a4de376cb65e6708825e861ab8e978983cfed/diff:/mnt/sda1/var/lib/docker/overlay2/e390354b9796597dc67546cd7c3863820f870b9cb893404cba52f0726fb3ccad/diff",
+                "MergedDir": "/mnt/sda1/var/lib/docker/overlay2/108c0770c06395799ab04386d5288d98758f4e6aab37d112a04c6085b4c38552/merged",
+                "UpperDir": "/mnt/sda1/var/lib/docker/overlay2/108c0770c06395799ab04386d5288d98758f4e6aab37d112a04c6085b4c38552/diff",
+                "WorkDir": "/mnt/sda1/var/lib/docker/overlay2/108c0770c06395799ab04386d5288d98758f4e6aab37d112a04c6085b4c38552/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:df64d3292fd6194b7865d7326af5255db6d81e9df29f48adde61a918fbd8c332",
+                "sha256:ddf5e5aedb7135abaaeb3b54f21c4f9b6cb3c095365c53c69b09dfee298cc292",
+                "sha256:c95a42433245239a582a112f013f1b7b24c056963dc1487dd0d717c8be3950b3",
+                "sha256:d5ace9ca2e7821653b957b13ab5266a47c837b800e87eaf117b085baac260f6e",
+                "sha256:9394b085471d64c0e296ec0aef93378e2ee015bc0fba2392c56a8b60ee36d539",
+                "sha256:b5230307e79206e15d6f9d6befff4332c6e2d4aeb0057aa77bf85e275013c954",
+                "sha256:460261c3f3b45d6f8df8331a7af4168ecb1220dab912563d1767374e24d1b0b9"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2018-12-17T13:12:32.492350252Z"
+        }
+    }
+]
+PS C:\Users\K.Naveen Reddy\Desktop\webapp>
