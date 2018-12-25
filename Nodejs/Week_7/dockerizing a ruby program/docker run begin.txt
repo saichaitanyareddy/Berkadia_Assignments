@@ -1,0 +1,30 @@
+PS C:\Users\K.Naveen Reddy\Desktop\Docker\dockerizing a ruby program> docker run begin
+hello world
+Welcome to Ruby
+-------Loops in RUBY------------
+---while statement---
+windows
+linux
+ubuntu
+---while Modifer---
+windows
+linux
+ubuntu
+---until statement---windows
+linux
+ubuntu
+---until Modifier---
+windows
+linux
+ubuntu
+---for loop---
+windows
+linux
+ubuntu
+---new approach---
+windows
+linux
+ubuntu
+---------Ranges in RUBY--------------
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
