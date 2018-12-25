@@ -1,0 +1,18 @@
+<h2>Air Quality Details of various Countries</h2>
+<div class="container" *ngIf=airDetails>
+    <div class="row">
+        <div class="col-md-4" *ngFor="let air of airDetails">
+            <div class="card mb-4 box-shadow"> 
+                <div class="card-header">
+                    <h3 class="my-0 font-weight-normal">{{air.name}}</h3>
+                </div>
+                <div class="card-body">
+                        <p>code: {{air.code}}</p>
+                        <p>count: {{air.count}}</p>
+                        <p>cities: {{air.cities}}</p>
+                        <p>locations: {{air.locations}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

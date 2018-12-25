@@ -1,0 +1,20 @@
+<h2>Measurement of various parameters in different locations</h2>
+<div class="container" *ngIf=measurementDetails>
+    <div class="row">
+        <div class="col-md-4" *ngFor="let measurement of measurementDetails">
+            <div class="card mb-4 box-shadow"> 
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">{{measurement.city}}</h4>
+                </div>
+                <div class="card-body">
+                    <p>Property measured: {{measurement.parameter}}</p>
+                    <p>units: {{measurement.value}} {{measurement.unit}}</p>
+                    <p>Timestamp of measurement: {{measurement.date['local']}}</p>
+                    <p>location: {{measurement.location}}</p>
+                    <p>latitude: {{measurement.coordinates['latitude']}} longitude:{{measurement.coordinates['longitude']}}</p>
+                    <p>country: {{measurement.country}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

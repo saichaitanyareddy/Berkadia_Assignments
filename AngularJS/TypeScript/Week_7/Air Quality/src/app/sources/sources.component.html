@@ -1,0 +1,19 @@
+<h2>Sources for Air Quality Details</h2>
+<div class="container" *ngIf=sourceDetails>
+    <div class="row">
+        <div class="col-md-4" *ngFor="let source of sourceDetails">
+            <div class="card mb-4 box-shadow"> 
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">{{source.name}}</h4>
+                </div>
+                <div class="card-body">
+                    <p>url: {{source.url}}</p>
+                    <p>description: {{source.description}}</p>
+                    <p>contact details: {{source.contacts[0]}}</p>
+                    <p>city: {{source.city}}</p>
+                    <p>country: {{source.country}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

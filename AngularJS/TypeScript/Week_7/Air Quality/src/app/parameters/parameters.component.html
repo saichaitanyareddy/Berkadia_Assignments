@@ -1,0 +1,17 @@
+<h2>The following are the various parameters that are considered for measuring Air Quality:</h2>
+<div class="container" *ngIf=parameterDetails>
+    <div class="row">
+        <div class="col-md-4" *ngFor="let parameter of parameterDetails">
+            <div class="card mb-4 box-shadow"> 
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">{{parameter.name}}</h4>
+                </div>
+                <div class="card-body">
+                    <p>Parameter id: {{parameter.id}}</p>
+                    <p>Parameter preferredUnits: {{parameter.preferredUnit}}</p>
+                    <p>Description: {{parameter.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
