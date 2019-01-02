@@ -1,0 +1,205 @@
+<h1>Select your city</h1>
+<div class="row mb-2">
+    <div class="col-md-6"  *ngFor="let city of cities;" >
+        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+            <div class="card-body d-flex flex-column align-items-start" (click)="getDetails(city.name)" data-toggle="modal" data-target="#theaterDetails">
+                <h3 class="mb-0">{{city.name}}</h3>
+                <p class="card-text mb-auto">No. of Theaters: {{city.no_of_theaters}}</p>
+                <p>{{city.pincode}}</p>   
+            </div>
+        </div>
+    </div>    
+</div>
+        
+<div class="modal fade" id="theaterDetails" tabindex="-1" role="dialog" aria-labelledby="theaterDetailsTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header" *ngIf=TheaterDetails>
+                <h5 class="modal-title" id="exampleModalLongTitle">Theaters available in {{selected_city}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6" *ngFor="let Theater of TheaterDetails">
+                        <div class="card mb-6 box-shadow"> 
+                            <div class="card-header" >
+                                <h4 class="my-0 font-weight-normal">{{Theater.name}}</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>Now playing: {{Theater.now_playing}}</p>
+                                <p>Location: {{Theater.location}}</p>
+                                <p>Capacity: {{Theater.capacity}}</p>
+                                <p>Availability: {{Theater.Available_seats}}</p>
+                                <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#movieDetails" (click)="getMovieDetails(Theater.now_playing,Theater.name,Theater.cost_per_ticket,Theater.Available_seats)" data-dismiss="modal">Proceed to book</button>
+                            </div>
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="movieDetails" tabindex="-1" role="dialog" aria-labelledby="movieDetailsTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content" *ngIf=movieDetails>
+            <div class="modal-header" >
+                <h5 class="modal-title" id="exampleModalLongTitle">Details about  {{selected_movie}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card mb-8 box-shadow"> 
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-normal">{{movieDetails.name}}</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <p>Music : {{movieDetails.Music}}</p>
+                                        <p>Producer :{{movieDetails.Producer}}</p>
+                                        <p>Director :{{movieDetails.Director}}</p>
+                                        <p>Release Date :{{movieDetails.Release_date}}</p>
+                                        <p>Ratings :{{movieDetails.Ratings}}</p>
+                                    </div>
+                                    <div class="col">
+                                        <p>select Date: <input type="date" [(ngModel)]="date"></p>
+                                        <p>show timings:</p>
+                                        <input type="radio" name="show_time" value="11:30 am" (change)="showTime($event)">11:30 am
+                                        <input type="radio" name="show_time" value="2:30 pm" (change)="showTime($event)">2:30 pm
+                                        <input type="radio" name="show_time" value="6:30 pm" (change)="showTime($event)">6:30 pm
+                                        <input type="radio" name="show_time" value="10:00 pm" (change)="showTime($event)">10:00 pm
+                                    </div>
+                                </div>   
+                                <button type="button" class="btn btn-primary" [disabled]=proceed data-toggle="modal" data-target="#selectSeats" data-dismiss="modal">Book tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="selectSeats" tabindex="-1" role="dialog" aria-labelledby="selectSeatsTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header" >
+                <h5 class="modal-title" id="exampleModalLongTitle">Pick no of Tickets</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow"> 
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-normal">Select the no of tickets you want to book</h4>
+                            </div>
+                            <div class="card-body">
+                                <input type="radio" name="no_of_tickets" value=1 (change)="radioChangeHandler($event)">1
+                                <input type="radio" name="no_of_tickets" value=2 (change)="radioChangeHandler($event)">2
+                                <input type="radio" name="no_of_tickets" value=3 (change)="radioChangeHandler($event)">3
+                                <input type="radio" name="no_of_tickets" value=4 (change)="radioChangeHandler($event)">4
+                                <input type="radio" name="no_of_tickets" value=5 (change)="radioChangeHandler($event)">5
+                                <input type="radio" name="no_of_tickets" value=6 (change)="radioChangeHandler($event)">6
+                                <button type="button" class="btn btn-primary" [disabled]=proceed2  data-toggle="modal" data-target="#bookingDetails" data-dismiss="modal">Proceed to Payment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="bookingDetails" tabindex="-1" role="dialog" aria-labelledby="bookingDetailsTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header" >
+                <h5 class="modal-title" id="exampleModalLongTitle">Payment Gateway</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card mb-8 box-shadow"> 
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-normal">Booking Details</h4>
+                            </div>
+                            <div class="card-body">
+                                <input type="text" class="form-control" [(ngModel)]="username" placeholder="Enter Username" required>
+                                <input type="email" class="form-control" [(ngModel)]="email" placeholder="Enter email" required>
+                                <input type="number" class="form-control" [(ngModel)]="phone" placeholder="Enter Mobile Number" required>
+                                <p>No.of seats selected :{{tickets}}</p>
+                                <p>Total cost :{{tickets*cost_per_ticket}}</p>
+                                <button type="submit" class="btn btn-primary"  (click)="onBooking()" data-dismiss="modal"  data-toggle="modal" data-target="#ticketDetails">Pay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="ticketDetails" tabindex="-1" role="dialog" aria-labelledby="ticketDetailsTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header" >
+                <h5 class="modal-title" id="exampleModalLongTitle">Verify your ticket Details</h5>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8" *ngIf=ticketDetails>
+                        <div class="card mb-8 box-shadow"> 
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-normal">Ticket Details</h4>
+                            </div>
+                            <div class="card-body" >
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <p>Ticket id :{{ticketDetails._id}}</p>
+                                        <p>Username :{{ticketDetails.username}}</p>
+                                        <p>Email :{{ticketDetails.email}}</p>
+                                        <p>Phone :{{ticketDetails.phone}}</p>
+                                        <p>Movie Name :{{ticketDetails.movie_name}}</p>
+                                        <p>Theater Name :{{ticketDetails.Theater_name}}</p>
+                                        <p>Show date :{{ticketDetails.show_date}} </p>
+                                        <p>Show Time :{{ticketDetails.show_time}}</p>
+                                        <p>No of Tickets :{{ticketDetails.No_of_tickets}}</p>
+                                    </div>
+                                    <img src="../../assets/booking_confirm-symbol.png" alt="confirmed" width="100" height="100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="onClose()" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
