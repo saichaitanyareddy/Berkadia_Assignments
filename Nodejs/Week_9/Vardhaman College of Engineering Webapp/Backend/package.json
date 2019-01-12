@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend for Vardhaman College Application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Sai Chaitanya Reddy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bookshelf": "^0.14.2",
+    "cors": "^2.8.5",
+    "elasticsearch": "^15.2.0",
+    "express": "^4.16.4",
+    "knex": "^0.16.3",
+    "mysql2": "^1.6.4",
+    "redis": "^2.8.0"
+  }
+}
