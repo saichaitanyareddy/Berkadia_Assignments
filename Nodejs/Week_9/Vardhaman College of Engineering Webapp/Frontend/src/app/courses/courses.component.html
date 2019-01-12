@@ -1,0 +1,22 @@
+<marquee> 
+    <div class="row">
+        <img src='../../assets/new-icon.gif' alt='new-icon'>
+        <h5><br>VII SEM Results have been released check in results portal</h5>
+    </div>
+</marquee>
+<div class="container" *ngIf="branches">
+    <h3>The courses that we offer and the current number of students in each course are shown below:</h3>
+    <div class="row" *ngFor="let branch of branches;">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <ul class="list-group">
+                <li class="list-group-item">Branch code : {{branch.bid}}    Branch Name : {{branch.bname}}</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <ul class="list-group">
+                <li class="list-group-item">Number of students in {{branch.bname}} are {{branch.count}}</li>
+            </ul><br>
+        </div>
+    </div>
+</div>

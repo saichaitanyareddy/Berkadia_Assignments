@@ -1,0 +1,13 @@
+.align{
+    text-align: center;
+}
+.design{
+    padding: 15%;
+    color:#fff;
+    background-color: rgb(3, 49, 88);
+    border-radius: 10px;
+}
+h3,h6{
+    color: rgb(3, 49, 88);
+    text-align: center;
+}

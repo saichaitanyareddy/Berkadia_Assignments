@@ -1,0 +1,12 @@
+.list-group-item{
+    background-color: rgb(4, 58, 105);
+    color:white;
+}
+h3{
+    color:rgb(2, 22, 39);
+}
+img{
+    width:100px;
+     height:80px;
+     padding: 1%;
+}

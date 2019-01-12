@@ -1,0 +1,17 @@
+<div class="align">
+    <div class="container">
+        <h1 class="display-4">Search your Batch mates...</h1>
+        <h6>Displays the list of students based on branch code entered</h6>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="design">
+                    <img src='../../assets/icon.png' alt="vardhaman" width="160" height="150"><br>
+                    <label>Enter Branch code:</label>
+                    <input type="text" class="form-control" [(ngModel)]="bid" placeholder="Enter branch code" required><br>
+                    <button type="button" class="btn btn-light" (click)="onSearch(bid)">Search</button>        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

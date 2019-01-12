@@ -1,0 +1,17 @@
+.align{
+    text-align: center;
+}
+.card {
+    color:#000;
+    border-color: rgb(2, 41, 92);
+    border-width: 5px;
+    background-color: rgb(139, 201, 255);
+}
+h3{
+    text-align: center;
+    color: rgb(5, 38, 80);
+}
+.card-header{
+    background-color: rgb(5, 38, 80);
+    color: #fff;
+}

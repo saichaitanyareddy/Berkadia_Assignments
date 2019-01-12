@@ -1,0 +1,19 @@
+<div class="align">
+    <img src="../../assets/professional.jpg" width="1100" height="300">
+    <marquee><h1 class="dispaly-4">Hearty welcome to freshers!</h1></marquee>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="design">
+                    <h6>Join the new Evolution</h6>
+                    <input type="text" class="form-control" [(ngModel)]="id" placeholder="Enter your ID"><br>
+                    <input type="text" class="form-control" [(ngModel)]="name" placeholder="Enter your Name"><br>
+                    <input type="number" class="form-control" [(ngModel)]="branch" placeholder="Enter your Branch id"><br>
+                    <input type="number" class="form-control" [(ngModel)]="phone" placeholder="Enter your phone number"><br>
+                    <button type="submit" class="btn btn-light" (click)="onRegister(id,name,branch,phone)">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

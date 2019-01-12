@@ -1,0 +1,17 @@
+<div class="align">
+    <h3 class="display-4">Welcome to Students portal</h3>
+    <h6>Enter student roll number to view student details</h6>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="design">
+                    <img src='../../assets/icon.png' alt="vardhaman" width="180" height="150"><br>
+                    <label>Enter Rollno:</label>
+                    <input type="text" class="form-control" [(ngModel)]="rollno" placeholder="Enter Roll Number" required><br>
+                    <button type="button" class="btn btn-light" (click)="getDetails(rollno)">Login</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
