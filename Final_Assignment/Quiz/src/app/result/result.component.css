@@ -1,0 +1,12 @@
+.heading{
+    background-color: #000;
+    color: #fff;
+}
+.even{
+    background-color: rgb(170, 208, 243);
+    color: #000;
+}
+.odd{
+    background-color: rgb(27, 60, 92);
+    color: #fff;
+}

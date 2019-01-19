@@ -1,0 +1,38 @@
+<button class="button" class="btn btn-primary" (click)="onStart()" data-toggle="modal" data-target="#Questions">start</button>
+
+      
+<div class="modal fade" id="Questions" tabindex="-1" role="dialog" aria-labelledby="questionsTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+      <div class="modal-content">
+          <div class="modal-header" *ngIf=question>
+              <h5 class="modal-title" id="exampleModalLongTitle">Question</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="card mb-6 box-shadow"> 
+                          <div class="card-header" >
+                              <h4 class="my-0 font-weight-normal">Question number{{question.qid}}</h4>
+                          </div>
+                          <div class="card-body">
+                              <p>Question: {{question.question}}</p>
+                              <input type="radio" name="select" value=1 (change)="selectedOption($event)">{{question.option1}}<br>
+                              <input type="radio" name="select" value=2 (change)="selectedOption($event)">{{question.option2}}<br>
+                              <input type="radio" name="select" value=3 (change)="selectedOption($event)">{{question.option3}}<br>
+                              <input type="radio" name="select" value=4 (change)="selectedOption($event)">{{question.option4}}<br>
+                              <button type="button" class="btn btn-primary" [disabled]=proceed  (click)="onSubmit(question.qid)">Submit</button>
+                            </div>
+                      </div><br>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary"  data-dismiss="modal" (click)="onClose()">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+

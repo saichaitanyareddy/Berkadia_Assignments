@@ -1,0 +1,14 @@
+<table class="table table-border">
+  <tr class="heading">
+    <th>Question id</th>
+    <th>Selected option</th>
+    <th>result</th>
+    <th>marks</th>
+  </tr>
+  <tr  *ngFor="let i of result;let even=even;let odd=odd;" [ngClass]="{odd:odd,even:even,first: first, last: last}">
+    <td>{{i.qid}}</td>
+    <td>{{i.selected}}</td>
+    <td>{{i.result}}</td>
+    <td>{{i.marks}}</td>
+  </tr>
+</table>
