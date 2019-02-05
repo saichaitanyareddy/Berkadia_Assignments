@@ -1,0 +1,15 @@
+<h3 class="display-3">Quiz report</h3>
+<div class="container" *ngIf="result">
+    <div class="row" *ngFor="let i of result;let num=index;">
+        <div class="col-md-4"></div>
+        <div class="col-md-8">
+            <p>{{num+1}})Question:{{i.question}}</p>
+            <p [ngStyle]="{color:i.selected_option==i.answer?'green':'red'}">selected option:{{i.selected_option}}</p>
+            <div *ngIf="i.answer!=i.selected_option">
+              <p>correct answer:{{i.answer}}</p>
+            </div>
+        </div>
+    </div>
+    <h1 class="dispaly-4">Percentage obtained:{{percentage}}</h1>
+    <button class="btn btn-primary" (click)="goToHome()">Go to Home</button>
+</div>

@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-6">
+            <div id="quiz" *ngIf="questions">
+              <div class="design">
+                    <p>{{count}}) {{questions[id].question}}</p>
+                    <input type="radio" name="sel" value="{{questions[id].option_1}}" [(ngModel)]="select">{{questions[id].option_1}}<br>
+                    <input type="radio" name="sel" value="{{questions[id].option_2}}" [(ngModel)]="select">{{questions[id].option_2}}<br>
+                    <input type="radio" name="sel" value="{{questions[id].option_3}}" [(ngModel)]="select">{{questions[id].option_3}}<br>
+                    <input type="radio" name="sel" value="{{questions[id].option_4}}" [(ngModel)]="select">{{questions[id].option_4}}<br>
+                    <div class="row" id="align">
+                        <div class="align" *ngIf="questions[id].qid!=1">
+                            <button class="btn btn-primary" (click)="previous()" data-target="#quiz" >Previous</button>   
+                        </div>
+                        <div class="align" *ngIf="count!=5">
+                            <button class="btn btn-primary" (click)="next()" data-target="#quiz">Answer</button>
+                        </div>
+                        <div clas="align" *ngIf="count==5">
+                            <button class="btn btn-primary" (click)="submit()" data-target="#quiz">Submit Quiz</button>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
