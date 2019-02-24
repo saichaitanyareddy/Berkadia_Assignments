@@ -4,7 +4,8 @@ const knex=require('../config/kenx');
 const students=require('../models/students');
 var client=require('../config/redis');
 let response;
-let key;
+let key=[];
+let i=0;
 
 router.post('/students',(req,res)=>{
     knex.raw(`insert into studentsdetails values('${req.body.sid}','${req.body.sname}',${req.body.bid},${req.body.phone})`).then((result)=>{
@@ -15,8 +16,8 @@ router.post('/students',(req,res)=>{
     });
 });
 router.get('/students',(req,res)=>{
-    if(key==req.query.sid){
-        client.get(key,function(error,result){
+    if(key.includes(req.query.sid)){
+        client.get(req.query.sid,function(error,result){
             if(error){
                 console.log(error);
                 throw error;
@@ -28,10 +29,11 @@ router.get('/students',(req,res)=>{
     }
     else{
         students.forge().where({sid:req.query.sid}).fetchAll({withRelated:['fk']}).then(function(user) {
-            key=req.query.sid;
+            key[i]=req.query.sid;
             response=user.toJSON();
             res.send(response);
-            client.set(key,JSON.stringify(response),redis.print);
+            client.set(key[i],JSON.stringify(response),redis.print);
+            i++;
         }).catch(function(err) {
             console.error(err);
         });
